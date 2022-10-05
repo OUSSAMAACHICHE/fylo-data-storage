@@ -1,0 +1,153 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 350px;
+    background-color: var(--Very-Dark-Blue);
+    font-size: 14px;
+}
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+main .box {
+    background-color: var(--Dark-Blue);
+    position: relative;
+}
+main .one {
+    min-width: 350px;
+    border-radius: 10px 110px 10px 10px;
+    margin-bottom: 45px; 
+}
+main .two {
+    min-width: 650px;
+    border-radius: 10px;
+}
+main .two .left{
+   position: absolute;
+   width: 180px;
+   height: 74px;
+   background-color: var(--Pale-Blue);
+   color: var(--Very-Dark-Blue);
+   right: 50px;
+   top: -45px;
+   border-radius: 10px;
+   color: var(--Very-Dark-Blue);
+   font-size: 2.5rem;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+main .two::after {
+    content: "";
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent var(--Pale-Blue) transparent transparent;
+    right: 50px;
+    top: -1px;
+}
+main .two .left span {
+    font-size: 1rem;
+    color: var(--Grayish-Blue);
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+main .box>img {
+    margin: 40px 40px 30px;
+}
+.one .icons {
+    display: flex;
+    margin-left: 30px;
+}
+.one .icons img {
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    margin: 0px 10px 50px;
+    border-radius: 6px;
+}
+.two h4 {
+    color: var(--Grayish-Blue);
+    margin: 40px 40px 20px;
+
+}
+.two h4 strong{
+    color: var(--Pale-Blue);
+}
+.two .progres {
+   width: 85%;
+   background-color: var(--Very-Dark-Blue);
+   height: 20px;
+   margin: auto;
+   border-radius: 40px;
+   position: relative;
+}
+.two .progres span {
+    position: absolute;
+  background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 100%;
+  border-radius: 10px;
+}
+.two .progres::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--Pale-Blue);
+    right: 140px;
+    top: 2px;
+    z-index: 1;
+}
+.two .num {
+    display: flex;
+    color: var(--Pale-Blue);
+    justify-content: space-between;
+    width: 85%;
+    margin: 10px auto 50px;
+    
+}
+.two .num span {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    color: white;
+}
+
+.attribution a {
+    color: var(--Pale-Blue);
+
+}
